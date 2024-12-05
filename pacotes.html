@@ -55,45 +55,47 @@
             <div class="card" id="card-pacote">
                 
                 <section class="card-pacote-info">
-                    
-                    <img src="imagem/mountain-bike.jpg" alt="bike na montanha">
+                    <img src="imagem/mountain-bike.jpg" alt="bike na montanha" onclick="openSlider(this.src)">
                     <h3>TRILHA DE BIKE</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit totam quidem sit
                         expedita dolorem dolor doloremque provident perspiciatis laboriosam quibusdam fuga voluptates
                         deleniti, eligendi esse illo praesentium, maiores alias!</p>
                     <div class="pac-flex">
-                        <div class="pac-fotos"><a href="#">Fotos</a></div>
+                        <div class="pac-fotos"><a href="#" onclick="openSlider('imagem/mountain-bike.jpg')">Fotos</a></div>
                         <div class="pac-reserva"><a href="#">Reserva</a></div>
                     </div>
-
                 </section>
                 <section class="card-pacote-info">
-                    <img src="imagem/trilha2.jpg" alt="trilha em família">
+                    <img src="imagem/trilha2.jpg" alt="trilha em família" onclick="openSlider(this.src)">
                     <h3>TRILHA EM FAMÍLIA</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit totam quidem sit
                         expedita dolorem dolor doloremque provident perspiciatis laboriosam quibusdam fuga voluptates
                         deleniti, eligendi esse illo praesentium, maiores alias!</p>
                     <div class="pac-flex">
-                        <div class="pac-fotos"><a href="#">Fotos</a></div>
+                        <div class="pac-fotos"><a href="#" onclick="openSlider('imagem/trilha2.jpg')">Fotos</a></div>
                         <div class="pac-reserva"><a href="#">Reserva</a></div>
                     </div>
-
                 </section>
                 <section class="card-pacote-info">
-                    <img src="imagem/trilha.jpg" alt="Trilha">
+                    <img src="imagem/trilha.jpg" alt="Trilha" onclick="openSlider(this.src)">
                     <h3>TREKKING</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit totam quidem sit
                         expedita dolorem dolor doloremque provident perspiciatis laboriosam quibusdam fuga voluptates
                         deleniti, eligendi esse illo praesentium, maiores alias!</p>
                     <div class="pac-flex">
-                        <div class="pac-fotos"><a href="#">Fotos</a></div>
+                        <div class="pac-fotos"><a href="#" onclick="openSlider('imagem/trilha.jpg')">Fotos</a></div>
                         <div class="pac-reserva"><a href="#">Reserva</a></div>
                     </div>
                 </section>
-
             </div>
         </article>
     </main>
+
+    <!-- Slider -->
+    <div class="slider" id="slider">
+        <span class="close-btn" onclick="closeSlider()">&times;</span>
+        <img id="slider-img" src="">
+    </div>
 
     <footer class="rodape">
         <div class="rodape-conteudo">
