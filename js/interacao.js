@@ -95,6 +95,7 @@ btn.forEach((x, i) => {
             let descricao = modalAcessorio.querySelector(".descricao-ac");
             descricao.innerHTML = "Uma mochila cargueira de trekking é um equipamento essencial para quem pratica caminhadas de longa distância e expedições. Essas mochilas são projetadas para carregar grandes volumes de equipamentos e suprimentos, proporcionando conforto e estabilidade durante a caminhada. Elas geralmente possuem uma capacidade que varia de 50 a 80 litros ou mais, dependendo da duração e das necessidades da viagem.";
             img.src = "imagem/cargueira.jpg";
+            
 
         } else if (i == 2) {
             layer1.style.display = "block";
@@ -126,14 +127,9 @@ btn.forEach((x, i) => {
             descricao.innerHTML = "Uma sapatilha de trekking é um calçado leve e flexível, projetado para caminhadas em terrenos variados, oferecendo conforto e proteção aos pés."
             img.src = "imagem/sapatilha-escalada.jpg";
         }
-
     })
 })
 
-fechar.addEventListener('click', function () {
-    layer1.style.display = "none";
-    modalAcessorio.style.display = "none";
-})
 
 
 
@@ -145,6 +141,11 @@ function openSlider(src) {
 }
 
 function closeSlider() {
-    document.getElementById('slider').style.display = 'none';
+    document.que('slider').style.display = 'none';
 }
 
+let fechar2 = document.querySelector(".slider .fechar");
+
+fechar2.addEventListener('click',function(){
+    document.querySelector('#slider').style.display = 'none';
+})

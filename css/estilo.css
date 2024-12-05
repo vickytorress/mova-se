@@ -808,6 +808,19 @@ iframe {
     align-items: center;
 }
 
+.slider .fechar{
+    /* background-color: red; */
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+    top: -300px;
+}
+
+.slider .fechar:hover{
+    color: #ccc;
+}
 .slider img {
     max-width: 90%;
     max-height: 90%;
